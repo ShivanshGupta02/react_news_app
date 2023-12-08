@@ -1,9 +1,10 @@
 import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from "firebase/auth"
 import {getFirestore} from "firebase/firestore"
+const FIREBASE_API_KEY = import.meta.env.VITE_FIREBASE_API_KEY;
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCDj_UwOPi_UYuZ_jmgLQPp4TyJ58xTBFw",
+  apiKey: FIREBASE_API_KEY,
   authDomain: "news-app-64f70.firebaseapp.com",
   projectId: "news-app-64f70",
   storageBucket: "news-app-64f70.appspot.com",
